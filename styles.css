@@ -1,0 +1,45 @@
+body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(1, 10, 53), rgb(0, 0, 0)) ;
+}
+.button {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url("./dog.jpg");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #fff;
+    outline: none;
+    transition: .2s;
+}
+.button:hover {
+    box-shadow: 0 0 3rem #fff;
+    width: 16rem;
+    height: 16rem;
+}
+
+.start {
+    width: 16rem;
+    height: 16rem;
+    box-shadow: 0 0 1rem rgb(255, 0, 0);
+    animation: start .5s infinite;
+}
+
+@keyframes start {
+    0% { box-shadow: 0 0 1rem rgb(255, 0, 0); }
+    50% { box-shadow: 0 0 2.5rem rgb(255, 0, 0); }
+    100% { box-shadow: 0 0 1rem rgb(255, 0, 0); }
+}
